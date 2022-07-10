@@ -41,6 +41,7 @@ jobs:
           wget -A pdf -l=1 --mirror "https://www.fia.com/documents/championships/fia-formula-one-world-championship-14/season/season-2022-2005"
       - name: Add updated files    
         run: |
+           git config user.name "GH Runner"
            git add *
            git commit --allow-empty -m "After race automatic update"
            git push
